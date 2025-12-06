@@ -9,7 +9,6 @@ driver.get(f"https://www.amazon.in/s?k={query}&crid=3C5P82EHCC7AR&sprefix=lap%2C
 
 elem = driver.find_element(By.CLASS_NAME, "puis-card-container")
 time.sleep(3)
-# print(elem.text)
 print(elem.get_attribute("outerHTML"))
 
 
